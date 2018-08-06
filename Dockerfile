@@ -11,6 +11,7 @@ RUN apk add --no-cache \
     upx \
     uncrustify \
     libc-dev \
+    zlib-dev \
     ncurses-dev \
     mariadb-dev \
     postgresql-dev \
@@ -32,8 +33,16 @@ FROM alpine:3.8
 COPY --from=builder /usr/local/ /usr/local/
 RUN apk add --no-cache \
     bash \
+
+    # not needed, but like it
     nano \
+
+    # needed for compile
     gcc \
-    make
+    libc-dev \
+    make \
+
+    ## needed for -static/-fullstatic
+    zlib-dev
 
 CMD ['sh']

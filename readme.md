@@ -1,4 +1,9 @@
+# Harbour compiler on Alpine
+[Home page](https://harbour.github.io/)  
+[GitHub reporitory](https://github.com/harbour/core)  
+[Reference guide](https://harbour.github.io/doc/)
+
 ## build image
 ```bash
-docker build -t padiazg/harbour --build-arg http_proxy=http://10.118.1.80:3128 --build-arg https_proxy=http://10.118.1.80:3128 .
+docker build -t padiazg/harbour .
 ```
