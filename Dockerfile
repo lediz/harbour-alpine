@@ -45,4 +45,6 @@ RUN apk add --no-cache \
     ## needed for -static/-fullstatic
     zlib-dev
 
+ENV LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib/harbour/
+
 CMD ['sh']

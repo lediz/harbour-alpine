@@ -1,0 +1,18 @@
+Application Internal Error - /tmp/sddmy/sddmy
+Terminated at: 2018-08-06 18:53:41
+Unrecoverable error 6005: Exception SIGSEGV at address (nil)
+Called from RDDINFO(0)
+Called from MAIN(25) in sddmy.prg
+------------------------------------------------------------------------
+Application Internal Error - /tmp/sddmy/sddmy
+Terminated at: 2018-08-06 18:57:12
+Unrecoverable error 6005: Exception SIGSEGV at address (nil)
+Called from RDDINFO(0)
+Called from MAIN(25) in sddmy.prg
+------------------------------------------------------------------------
+Application Internal Error - /tmp/sddmy/sddmy
+Terminated at: 2018-08-06 19:07:23
+Unrecoverable error 6005: Exception SIGSEGV at address (nil)
+Called from RDDINFO(0)
+Called from MAIN(25) in sddmy.prg
+------------------------------------------------------------------------

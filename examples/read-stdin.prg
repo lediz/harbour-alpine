@@ -17,7 +17,7 @@ procedure main()
     ENDDO
 
     cData = Trim(cData)
-    cOutput := "Hello " + iif(hb_BLen(cData) == 0, "extranger", cData)
+    cOutput := "Hello " + iif(hb_BLen(cData) == 0, "extranger", cData) + " from Harbour"
 
     // write stream
     FWrite(hStdOut, cOutput)
