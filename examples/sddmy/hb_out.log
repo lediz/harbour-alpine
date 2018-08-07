@@ -16,3 +16,15 @@ Unrecoverable error 6005: Exception SIGSEGV at address (nil)
 Called from RDDINFO(0)
 Called from MAIN(25) in sddmy.prg
 ------------------------------------------------------------------------
+Application Internal Error - /tmp/sddmy/sddmy
+Terminated at: 2018-08-06 20:02:59
+Unrecoverable error 9004: RDD invalid or failed to load
+Called from HB_SDDMY_REGISTER(0)
+Called from MAIN(18) in sddmy.prg
+------------------------------------------------------------------------
+Application Internal Error - /tmp/sddmy/sddmy
+Terminated at: 2018-08-06 20:13:54
+Unrecoverable error 9004: RDD invalid or failed to load
+Called from HB_SDDMY_REGISTER(0)
+Called from MAIN(18) in sddmy.prg
+------------------------------------------------------------------------
