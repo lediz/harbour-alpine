@@ -1,15 +1,11 @@
 FROM alpine:3.8 as builder
 
 RUN apk add --no-cache \
-    bash \
-    nano \
     git \
     gcc \
     make \
     binutils \
-    fakeroot \
     upx \
-    uncrustify \
     libc-dev \
     zlib-dev \
     ncurses-dev \
@@ -17,7 +13,7 @@ RUN apk add --no-cache \
     postgresql-dev \
     sqlite-dev \
     unixodbc-dev && \
-    git clone https://github.com/harbour/core.git
+    git clone --depth=1 https://github.com/harbour/core.git
 
 COPY arc4.c /core/src/rtl/
 COPY mysql.c /core/contrib/hbmysql/
@@ -33,15 +29,12 @@ FROM alpine:3.8
 COPY --from=builder /usr/local/ /usr/local/
 RUN apk add --no-cache \
     bash \
-
     # not needed, but like it
     nano \
-
     # needed for compile
     gcc \
     libc-dev \
     make \
-
     ## needed for -static/-fullstatic
     zlib-dev
 
